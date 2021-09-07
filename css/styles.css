@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #272a31;
+}
+
+.grey {
+  color: #d3d3d3;
+}
+
+.bg-grey {
+  background-color: #d3d3d3;
+}
+
+.orange {
+  color: #ec5242;
+}
+
+.bg-orange {
+  background-color: #ec5242;
+}
+
+article {
+}
+
+main {
+  background: url("../images/3d-background.jpg") no-repeat;
+  width: 100%;
+}
+
+.aside {
+  font-size: small;
+  color: #fff;
+}
+
+.aside img {
+  width: 1em;
+}
+
+button {
+}
+
+#facebook {
+  width: 0.6em;
+}
+
+nav {
+  min-width: 100%;
+}
+
+.active {
+  color: #ec5242 !important;
+}
+
+nav a {
+  color: #3f4758 !important;
+}
+
+.main-article {
+  background-color: rgba(240, 230, 230, 0.9);
+  width: 100%;
+}
+
+.main-article h1 {
+}
+
+.header {
+  font-family: Lato, sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.main-article p {
+  font-size: x-large !important;
+  text-align: left !important;
+  margin-bottom: 0;
+}
+
+.main-article .small-container {
+  width: 90%;
+  outline: 1px solid #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    background: url("../images/3d-background-big.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .main-article h1 {
+    width: 60%;
+    margin-left: 2.2em;
+  }
+
+  .main-article .small-container {
+    width: 40%;
+  }
+}
