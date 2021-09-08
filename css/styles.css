@@ -7,6 +7,8 @@ html {
 
 body {
   background-color: #272a31;
+  font-family: cocogoose, serif;
+  /* width: 100%; */
 }
 
 .grey {
@@ -25,11 +27,14 @@ body {
   background-color: #ec5242;
 }
 
-article {
+.header {
+  font-family: Lato, sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
 }
 
-main {
-  background: url("../images/3d-background.jpg") no-repeat;
+.main {
+  background: url("../images/3d-background.jpg");
   width: 100%;
 }
 
@@ -43,6 +48,7 @@ main {
 }
 
 button {
+  border: none;
 }
 
 #facebook {
@@ -61,43 +67,118 @@ nav a {
   color: #3f4758 !important;
 }
 
+.nwk {
+  border: solid thick red !important;
+  font-size: small;
+}
+
 .main-article {
-  background-color: rgba(240, 230, 230, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
 }
 
-.main-article h1 {
-}
-
-.header {
-  font-family: Lato, sans-serif;
-  font-size: xx-large;
-  font-weight: 900;
-}
-
 .main-article p {
-  font-size: x-large !important;
-  text-align: left !important;
   margin-bottom: 0;
 }
 
+.main-article h1 {
+  width: 75%;
+  /* margin-left: 0; */
+}
+
+/* * {
+  outline: solid red;
+} */
+
 .main-article .small-container {
-  width: 90%;
+  width: 70%;
   outline: 1px solid #fff;
 }
 
+.main-event {
+  background: url("../images/main-bg.PNG");
+  width: 100%;
+}
+
+.sub-article h3 {
+  font-size: medium;
+  font-family: Lato, sans-serif;
+}
+
+.sub-article .red-line {
+  width: 1.5em;
+  height: 2px;
+  background-color: #ec5242;
+}
+
+.main-event .event-row {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.flexbx {
+  display: flex;
+  align-items: center;
+}
+
+.flexbx * {
+  margin-left: 1.5em;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 600px) {
-  main {
+  .main {
     background: url("../images/3d-background-big.jpg") no-repeat;
     background-size: cover;
   }
 
   .main-article h1 {
-    width: 60%;
-    margin-left: 2.2em;
+    width: 80%;
+    /* margin-left: 1em; */
   }
 
   .main-article .small-container {
-    width: 40%;
+    width: 80%;
+  }
+
+  .event-row {
+    width: 12em;
+    height: 12em;
+    margin-left: 4em;
+  }
+
+  .main-event .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 12em));
+  }
+
+  .flexbx {
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .flexbx * {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-list {
+    font-size: 1.2em;
+  }
+
+  .nwk {
+    font-size: 1em;
+    width: 13%;
+    /* padding-left: 1em; */
+  }
+
+  #collapsibleNavId * {
+    margin-right: 1em;
   }
 }

@@ -23,7 +23,7 @@
       <li><a href="" class="aside mx-2 text-decoration-none">Logout</a></li>
     </ul>
   </aside>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar nav-list navbar-expand-sm navbar-light bg-light">
     <div class="container logo font-weight-bolder">
       <a class="navbar-brand d-flex w-auto" href="#"><span>The</span> <img src="/images/css.png" width="50" height="50"
           alt="" class="align-self-center px-1 mb-sm-3"> <span class="align-self-end mb-2">Summit</span>
@@ -50,46 +50,105 @@
           <li class="nav-item">
             <a class="nav-link" href="#">News<span class="sr-only sr-only-focusable">About</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CSS campaign <span class="sr-only sr-only-focusable">About</span></a>
+          <li class="nav-item nwk">
+            <a class="nav-link" href="#"><abbr class="text-decoration-none" title="Networking">NWWK</abbr><span
+                class="sr-only sr-only-focusable">
+                <abbr title="Networking">NWK</abbr></span></a>
           </li>
         </ul>
       </div>
   </nav>
-  <main>
+  <main class="main">
     <article class="main-article">
-      <header class="pt-5">
-        <p class="container orange">"Hello! Innovators"</p>
-        <h1 class="container header orange">
-          THE GLOBAL CSS SUMMIT 2021
-        </h1>
-        <div class="container small-container border border-white p-2 ml-sm-5">
-          <small class="">
-            The annual event that gathers some of the best minds from all over the world for a single purpose: Cascading
-            Style Sheets!
-            Encouraging new approaches to web design and accessibility with CSS.
-          </small>
-        </div>
-        <div class="container">
-          <h2 class="header d-flex flex-column flex-sm-row mb-0">
-            <span>2021.10.09(SAT)</span> <span>~</span> <span>10(SUN)</span>
-          </h2>
-          <sub class="venue">@National Stadium Lagos, Nigeria</sub>
-        </div>
-
-      </header>
-      <main>
-
+      <div class="container text-left">
+        <header class="pt-5">
+          <p class="header orange">"Hello! Innovators"</p>
+          <h1 class="header orange">
+            THE GLOBAL CSS SUMMIT 2021
+          </h1>
+          <div class="small-container border border-white bg-white my-3 p-2">
+            <small class="">
+              The annual event that gathers some of the best minds from all over the world for a single purpose:
+              Cascading
+              Style Sheets!
+              Encouraging new approaches to web design and accessibility with CSS.
+            </small>
+          </div>
+          <div class="mb-5">
+            <h2 class="header mb-0">
+              <span>2021.10.09(SAT)</span> <span>~</span> <span>10(SUN)</span>
+            </h2>
+            <sub>@National Stadium Lagos, Nigeria</sub>
+          </div>
+        </header>
+      </div>
+      <main class="main-event">
+        <article class="container sub-article text-white d-flex flex-column justify-content-space-around">
+          <section class="d-flex flex-column align-items-center pt-4">
+            <h3 class="display-3 text-white mb-0">Main Program</h3>
+            <div class="red-line orange-bg mt-2 mb-4"></div>
+          </section>
+          <section class="container grid">
+            <!-- event 1 -->
+            <div class="event-row mb-2">
+              <div class="flexbx p-3">
+                <img class="" src="images/scroll.svg" width="50" height="50" alt="">
+                <p class="orange">Lecture</p>
+                <p class="">Listen to CSS masters as they explain various aspects of CSS and accesibility.
+                </p>
+              </div>
+            </div>
+            <!-- event 2 -->
+            <div class="event-row mb-2">
+              <div class="flexbx p-2">
+                <img class="" src="images/exhibition.svg" width="50" height="50" alt="">
+                <p class="orange">Exhibition</p>
+                <p class="">Appreciate beautiful CSS designs from all over the world that meets accesibility
+                  criterias.
+                </p>
+              </div>
+            </div>
+            <!-- event 3 -->
+            <div class="event-row mb-2">
+              <div class="flexbx p-2">
+                <img class="" src="images/chat.svg" width="50" height="50" alt="">
+                <p class="orange">Forum</p>
+                <p class="">Get the chance to share ideas and rub minds with experts in the field</p>
+              </div>
+            </div>
+            <!-- event 4 -->
+            <div class="event-row mb-2">
+              <div class="flexbx p-2">
+                <img class="" src="images/workshop.svg" width="50" height="50" alt="">
+                <p class="orange">Workshop</p>
+                <p class="">Get your hands dirty by practicing what you have learned rather than just observing.
+                </p>
+              </div>
+            </div>
+            <!-- event 5 -->
+            <div class="event-row">
+              <div class="flexbx p-3">
+                <img class="" src="images/networking.svg" width="50" height="50" alt="">
+                <p class="" class="orange text-decoration-none" title="Networking">NWWK</abbr></p>
+                <p class="">The chance to meet with our affiliates and network with them.</p>
+              </div>
+            </div>
+          </section>
+          <div class="btn-container container my-4">
+            <button class="bg-orange  text-white p-3" type="button">Join The Global CSS Summit 2021</button>
+          </div>
+        </article>
       </main>
       <footer>
 
       </footer>
+      </div>
     </article>
   </main>
   <footer>
 
   </footer>
-  <script src="javascript/script.js"></script>
+  <!-- <script src="javascript/script.js"></script> -->
 </body>
 
 </html>
