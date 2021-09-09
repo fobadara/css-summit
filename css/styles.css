@@ -38,6 +38,9 @@ body {
   width: 100%;
 }
 
+.wrapper {
+}
+
 .aside {
   font-size: small;
   color: #fff;
@@ -86,9 +89,9 @@ nav a {
   /* margin-left: 0; */
 }
 
-/* * {
-  outline: solid red;
-} */
+* {
+  /* outline: solid red; */
+}
 
 .main-article .small-container {
   width: 70%;
@@ -105,7 +108,7 @@ nav a {
   font-family: Lato, sans-serif;
 }
 
-.sub-article .red-line {
+.red-line {
   width: 1.5em;
   height: 2px;
   background-color: #ec5242;
@@ -117,16 +120,57 @@ nav a {
 
 .flexbx {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .flexbx * {
-  margin-left: 1.5em;
+  margin-left: 0.8em;
+}
+
+.summary {
+  width: 90%;
 }
 
 .btn-container {
   display: flex;
   justify-content: center;
+}
+
+.see-whole {
+  display: none;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.div-container .featured-speakers {
+  width: 100%;
+  text-align: center;
+}
+
+.appear {
+  display: flex;
+}
+
+.clear {
+  color: rgba(250, 248, 248, 0.4);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.opac {
+  color: rgba(250, 248, 248, 0.2);
+}
+
+.sponsors-cont {
+  /* padding-left: 5em; */
+}
+
+.more-wrap {
+  display: flex;
+}
+
+.link {
+  color: #272a31;
 }
 
 @media only screen and (min-width: 600px) {
@@ -146,24 +190,55 @@ nav a {
 
   .event-row {
     width: 12em;
-    height: 12em;
-    margin-left: 4em;
+    height: 13em;
+    /* margin-left: 4em; */
   }
 
   .main-event .grid {
     width: 100%;
     display: grid;
+    grid-gap: 0.2em;
     grid-template-columns: repeat(auto-fit, minmax(0, 12em));
+    justify-content: center;
   }
 
   .flexbx {
     flex-direction: column;
-    justify-content: start;
+    /* justify-content: start; */
     text-align: center;
   }
 
   .flexbx * {
     margin-left: 0;
+  }
+
+  .summary {
+    width: initial;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  .see-whole {
+    display: block;
+  }
+
+  .div-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+  .head-div {
+    grid-column: 1 / -1;
+  }
+
+  .removeable {
+    display: flex;
+  }
+
+  .more-wrap {
+    display: none;
   }
 }
 
