@@ -38,9 +38,6 @@ body {
   width: 100%;
 }
 
-.wrapper {
-}
-
 .aside {
   font-size: small;
   color: #fff;
@@ -86,11 +83,10 @@ nav a {
 
 .main-article h1 {
   width: 75%;
-  /* margin-left: 0; */
 }
 
-* {
-  /* outline: solid red; */
+.head-text {
+  font-size: medium;
 }
 
 .main-article .small-container {
@@ -161,10 +157,6 @@ nav a {
   color: rgba(250, 248, 248, 0.2);
 }
 
-.sponsors-cont {
-  /* padding-left: 5em; */
-}
-
 .more-wrap {
   display: flex;
 }
@@ -172,6 +164,50 @@ nav a {
 .link {
   color: #272a31;
 }
+
+/* About page start */
+.email {
+  margin-top: -3em;
+}
+
+.summit1 {
+  background: url("/images/summit1.jpg") no-repeat;
+  background-size: auto;
+  background-size: cover;
+  margin: auto;
+  width: 95%;
+  height: 25em;
+}
+
+.summit2 {
+  background: url("/images/summit2.jpg") no-repeat;
+  background-size: cover;
+  margin: auto;
+  width: 95%;
+  height: 25em;
+}
+
+.back-color {
+  background-color: rgba(228, 76, 76, 0.3);
+  width: 100%;
+  margin: auto;
+  margin-top: 3em;
+  height: 25em;
+}
+
+.year {
+  font-size: larger;
+}
+
+.abt-note {
+  background-color: #0f0f0f;
+}
+
+.abt-color {
+  color: #fff;
+}
+
+/* About page end */
 
 @media only screen and (min-width: 600px) {
   .main {
@@ -240,19 +276,21 @@ nav a {
   .more-wrap {
     display: none;
   }
+
+  /* About page start */
+  .summit1,
+  .summit2 {
+    margin: 0.5em;
+  }
+
+  .back-color {
+    height: 100%;
+    transform: translate(0, -3em);
+  }
+  /* About page end */
 }
 
 @media only screen and (min-width: 992px) {
-  .nav-list {
-    font-size: 1.2em;
-  }
-
-  .nwk {
-    font-size: 1em;
-    width: 13%;
-    /* padding-left: 1em; */
-  }
-
   #collapsibleNavId * {
     margin-right: 1em;
   }
