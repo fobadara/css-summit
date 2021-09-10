@@ -7,8 +7,7 @@ html {
 
 body {
   background-color: #272a31;
-  font-family: cocogoose, serif;
-  /* width: 100%; */
+  font-family: Lato, serif;
 }
 
 .grey {
@@ -82,7 +81,8 @@ nav a {
 }
 
 .main-article h1 {
-  width: 75%;
+  width: 100%;
+  padding-top: 1em;
 }
 
 .head-text {
@@ -116,7 +116,6 @@ nav a {
 
 .flexbx {
   display: flex;
-  /* align-items: center; */
 }
 
 .flexbx * {
@@ -130,6 +129,11 @@ nav a {
 .btn-container {
   display: flex;
   justify-content: center;
+}
+
+.speakers {
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .see-whole {
@@ -216,8 +220,7 @@ nav a {
   }
 
   .main-article h1 {
-    width: 80%;
-    /* margin-left: 1em; */
+    /* width: 80%; */
   }
 
   .main-article .small-container {
@@ -227,7 +230,6 @@ nav a {
   .event-row {
     width: 12em;
     height: 13em;
-    /* margin-left: 4em; */
   }
 
   .main-event .grid {
@@ -240,7 +242,6 @@ nav a {
 
   .flexbx {
     flex-direction: column;
-    /* justify-content: start; */
     text-align: center;
   }
 
@@ -287,11 +288,6 @@ nav a {
     height: 100%;
     transform: translate(0, -3em);
   }
-  /* About page end */
-}
 
-@media only screen and (min-width: 992px) {
-  #collapsibleNavId * {
-    margin-right: 1em;
-  }
+  /* About page end */
 }
