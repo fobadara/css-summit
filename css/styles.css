@@ -175,7 +175,7 @@ nav a {
 }
 
 .summit1 {
-  background: url("/images/summit1.jpg") no-repeat;
+  background: url("../images/summit1.jpg") no-repeat;
   background-size: auto;
   background-size: cover;
   margin: auto;
@@ -184,7 +184,7 @@ nav a {
 }
 
 .summit2 {
-  background: url("/images/summit2.jpg") no-repeat;
+  background: url("../images/summit2.jpg") no-repeat;
   background-size: cover;
   margin: auto;
   width: 95%;
