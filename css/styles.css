@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #272a31;
+  font-family: Lato, serif;
+}
+
+.grey {
+  color: #d3d3d3;
+}
+
+.bg-grey {
+  background-color: #d3d3d3;
+}
+
+.orange {
+  color: #ec5242;
+}
+
+.bg-orange {
+  background-color: #ec5242;
+}
+
+.header {
+  font-family: Lato, sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.main {
+  background: url("../images/3d-background.jpg");
+  width: 100%;
+}
+
+.aside {
+  font-size: small;
+  color: #fff;
+}
+
+.aside img {
+  width: 1em;
+}
+
+button {
+  border: none;
+}
+
+#facebook {
+  width: 0.6em;
+}
+
+nav {
+  min-width: 100%;
+}
+
+.active {
+  color: #ec5242 !important;
+}
+
+nav a {
+  color: #3f4758 !important;
+}
+
+.nwk {
+  border: solid thick red !important;
+  font-size: small;
+}
+
+.main-article {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+
+.main-article p {
+  margin-bottom: 0;
+}
+
+.main-article h1 {
+  width: 100%;
+  padding-top: 1em;
+}
+
+.head-text {
+  font-size: medium;
+}
+
+.main-article .small-container {
+  width: 70%;
+  outline: 1px solid #fff;
+}
+
+.main-event {
+  background: url("../images/main-bg.PNG");
+  width: 100%;
+}
+
+.sub-article h3 {
+  font-size: medium;
+  font-family: Lato, sans-serif;
+}
+
+.red-line {
+  width: 1.5em;
+  height: 2px;
+  background-color: #ec5242;
+}
+
+.main-event .event-row {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.flexbx {
+  display: flex;
+}
+
+.flexbx * {
+  margin-left: 0.8em;
+}
+
+.summary {
+  width: 90%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.speakers {
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.see-whole {
+  display: none;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.div-container .featured-speakers {
+  width: 100%;
+  text-align: center;
+}
+
+.appear {
+  display: flex;
+}
+
+.clear {
+  color: rgba(250, 248, 248, 0.4);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.opac {
+  color: rgba(250, 248, 248, 0.2);
+}
+
+.more-wrap {
+  display: flex;
+}
+
+.link {
+  color: #272a31;
+}
+
+/* About page start */
+.email {
+  margin-top: -3em;
+}
+
+.summit1 {
+  background: url("../images/summit1.jpg") no-repeat;
+  background-size: auto;
+  background-size: cover;
+  margin: auto;
+  width: 95%;
+  height: 25em;
+}
+
+.summit2 {
+  background: url("../images/summit2.jpg") no-repeat;
+  background-size: cover;
+  margin: auto;
+  width: 95%;
+  height: 25em;
+}
+
+.back-color {
+  background-color: rgba(228, 76, 76, 0.3);
+  width: 100%;
+  margin: auto;
+  margin-top: 3em;
+  height: 25em;
+}
+
+.year {
+  font-size: larger;
+}
+
+.abt-note {
+  background-color: #0f0f0f;
+}
+
+.abt-color {
+  color: #fff;
+}
+
+/* About page end */
+
+@media only screen and (min-width: 600px) {
+  .main {
+    background: url("../images/3d-background-big.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .main-article h1 {
+    /* width: 80%; */
+  }
+
+  .main-article .small-container {
+    width: 80%;
+  }
+
+  .event-row {
+    width: 12em;
+    height: 13em;
+  }
+
+  .main-event .grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 0.2em;
+    grid-template-columns: repeat(auto-fit, minmax(0, 12em));
+    justify-content: center;
+  }
+
+  .flexbx {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flexbx * {
+    margin-left: 0;
+  }
+
+  .summary {
+    width: initial;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  .see-whole {
+    display: block;
+  }
+
+  .div-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+  .head-div {
+    grid-column: 1 / -1;
+  }
+
+  .removeable {
+    display: flex;
+  }
+
+  .more-wrap {
+    display: none;
+  }
+
+  /* About page start */
+  .summit1,
+  .summit2 {
+    margin: 0.5em;
+  }
+
+  .back-color {
+    height: 100%;
+    transform: translate(0, -3em);
+  }
+
+  /* About page end */
+}
