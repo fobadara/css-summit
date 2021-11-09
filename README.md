@@ -1,6 +1,6 @@
 # css-summit
 
-A fictional three days summit on Cascading style sheets (CSS)
+A fictional three days summit on Cascading style sheets (CSS). Built with HTML,CSS and Javascript.
 
 ## My Portfolio Site
 
